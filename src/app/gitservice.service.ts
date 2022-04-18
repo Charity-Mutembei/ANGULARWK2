@@ -24,5 +24,8 @@ getRepos(){
 
 
 }
+updateUsername(username:string){
+  this.username = username
+}
 
 }

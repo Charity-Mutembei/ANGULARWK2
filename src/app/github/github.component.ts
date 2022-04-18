@@ -20,7 +20,8 @@ export class GithubComponent implements OnInit {
     this._githubService.getRepos().subscribe(repos => {
       this.repos = repos;
       // console.log (this.user);
-    })
+    });
+    
     
 
   }
