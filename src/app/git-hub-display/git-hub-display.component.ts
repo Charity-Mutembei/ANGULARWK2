@@ -7,6 +7,7 @@ import { GitserviceService } from '../gitservice.service';
   templateUrl: './git-hub-display.component.html',
   styleUrls: ['./git-hub-display.component.css'],
   providers: [GitserviceService],
+  
 })
 export class GitHubDisplayComponent implements OnInit {
   user: any;
