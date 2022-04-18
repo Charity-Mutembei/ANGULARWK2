@@ -10,21 +10,21 @@
 </div>
 
 
-<div class="container" *ngIf="user">
+<div class="chat" *ngIf="user">
   <div class="row">
     <div class="col">
       <div class="card text-center">
         <div class="card-header">
          <h3>{{user.name}}</h3>
         </div>
-        <div class="card-body">
+        <div class="card-body" style="background-color: black;">
             <div class="row">
                 <div class="col">
                   <img class="github-avatar img-thumbnail" src="{{user.avatar_url}}" alt="">
                 </div>
                 <div class="col">
                   <div class="stats">
-                    <span class="label label-primary" >{{user.pulic_repos}} Public Repositories </span>
+                    <span class="button btn-primary" style="border-radius: 2cm;" >{{user.pulic_repos}} Public Repositories </span>
                     <span   class="label label-success">{{user.public_gists}} Public Gists</span>
                     <span class="label label-info"> {{user.followers}} Followers</span>
                     <span class="label label-warning">{{user.following}} Following </span>
@@ -41,7 +41,7 @@
         </div>
       </div>
     </div>
-    <div class="col">
+    <!-- <div class="col"> -->
       <div class="container">
         <div class="card text-center">
           <div class="card-header">
@@ -67,4 +67,4 @@
       </div>
     </div>
   </div>
-</div>
+<!-- </div> -->
