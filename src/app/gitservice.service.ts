@@ -14,13 +14,13 @@ export class GitserviceService {
     console.log ('GitHub Service Started');
   }
 getUser(){
-  return this.http.get('https://api.github.com/users/' + this.username);
+  return this.http.get('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' + this.username);
   // .map((res: { json: () => any; }) => res.json());
 
 
 }
 getRepos(){
-  return this.http.get('https://api.github.com/users/' + this.username +'/repos');
+  return this.http.get('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' + this.username +'/repos');
   // .map((res: { json: () => any; }) => res.json());
 
 
