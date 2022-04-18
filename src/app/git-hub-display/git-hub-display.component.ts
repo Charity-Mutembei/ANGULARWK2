@@ -14,20 +14,20 @@ export class GitHubDisplayComponent implements OnInit {
   repos: any;
   
 
-  constructor(private _githubService: GitserviceService) { 
-    this._githubService.getUser().subscribe(user => {
-      this.user = user;
-      console.log (this.user);
-    });
+  // constructor(private _githubService: GitserviceService) { 
+  //   this._githubService.getUser().subscribe(user => {
+  //     this.user = user;
+  //     console.log (this.user);
+  //   });
 
 
-    this._githubService.getRepos().subscribe(repos => {
-      this.repos = repos;
-      // console.log (this.user);
-    })
+  //   this._githubService.getRepos().subscribe(repos => {
+  //     this.repos = repos;
+  //     // console.log (this.user);
+  //   })
     
 
-  }
+  // }
 
   ngOnInit(): void {
   }
