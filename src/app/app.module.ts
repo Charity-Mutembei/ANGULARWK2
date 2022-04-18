@@ -10,6 +10,7 @@ import { HttpHeaders } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { GitHubDisplayComponent } from './git-hub-display/git-hub-display.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { GitHubDisplayComponent } from './git-hub-display/git-hub-display.compon
     GithubComponent,
     NavbarComponent,
     GitHubDisplayComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
