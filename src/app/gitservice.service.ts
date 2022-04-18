@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient} from '@angular/common/http';
+import { HttpClient, HttpHeaders} from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs';
 // import { map } from 'rxjs/operators'
@@ -7,7 +7,8 @@ import { catchError, retry } from 'rxjs';
   providedIn: 'root'
 })
 export class GitserviceService {
-  private username="Charity-Mutembei";
+  // private username="";
+  username = [];
 
   constructor(private http: HttpClient) {
     console.log ('GitHub Service Started');
