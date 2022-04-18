@@ -6,3 +6,7 @@ body{
     font-size: 70px;
     font-weight: bolder;
 }
+button{
+    width: 6cm;
+    height: 3cm;
+}
