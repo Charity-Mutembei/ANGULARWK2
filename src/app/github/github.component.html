@@ -1,3 +1,15 @@
+<div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+          <form class="d-flex container-fluid">
+            <input class="form-control me-2" type="search" placeholder="Search by your username on Github" [(ngModel)]="username" (keyup)="search()" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+      </div>
+  </nav>
+</div>
+
+
 <div class="container" *ngIf="user">
   <div class="row">
     <div class="col">

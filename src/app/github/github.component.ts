@@ -10,6 +10,7 @@ import { GitserviceService } from '../gitservice.service';
 export class GithubComponent implements OnInit {
   user: any;
   repos: any;
+  username: any;
 
   constructor(private _githubService: GitserviceService) { 
     this._githubService.getUser().subscribe(user => {
@@ -25,6 +26,23 @@ export class GithubComponent implements OnInit {
     
 
   }
+  search (){
+    this._githubService.updateUsername(this.username);
+
+    this._githubService.getUser().subscribe(user => {
+      this.user = user;
+      // console.log (this.user);
+    });
+
+    this._githubService.getRepos().subscribe(repos => {
+      this.repos = repos;
+      // console.log (this.user);
+    });
+
+  }
+
+  
+
 
   ngOnInit(): void {
   }

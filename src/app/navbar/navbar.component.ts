@@ -15,22 +15,6 @@ export class NavbarComponent implements OnInit {
 
   constructor( private _githubService: GitserviceService) { }
 
-  search(){
-    this._githubService.getUser().subscribe(user => {
-      this.user = user;
-      console.log (this.user);
-    });
-
-
-    this._githubService.getRepos().subscribe(repos => {
-      this.repos = repos;
-      // console.log (this.user);
-    })
-    
-
-    this._githubService.updateUsername(this.username);
-  }
-
   ngOnInit(): void {
   }
 

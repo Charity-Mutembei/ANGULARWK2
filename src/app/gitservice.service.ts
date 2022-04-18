@@ -24,8 +24,8 @@ getRepos(){
 
 
 }
-updateUsername(username:string){
-  this.username = username
+updateUsername(username:any){
+  this.username = username;
 }
 
 }
