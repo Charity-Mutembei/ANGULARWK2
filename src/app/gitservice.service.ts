@@ -5,6 +5,7 @@ import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs';
 import { map } from 'rxjs/operators'
 import { environment } from 'src/environments/environment';  
+import { Github } from './github';
 @Injectable({
   providedIn: 'root'
 })
@@ -17,13 +18,13 @@ export class GitserviceService {
     console.log ('GitHub Service Started');
   }
 getUser(){
-  return this.http.get('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' + this.username);
+  return this.http.get('https://api.github.com/users/'+this.username);
   // .map((res: { json: () => any; }) => res.json());
 
 
 }
 getRepos(){
-  return this.http.get('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' + this.username +'/repos');
+  return this.http.get('https://api.github.com/users/'+this.username+'/repos');
   // .map((res: { json: () => any; }) => res.json());
 
 
