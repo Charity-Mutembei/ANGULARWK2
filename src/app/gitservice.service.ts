@@ -9,8 +9,8 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class GitserviceService {
-  // private username="";
-  username: any;
+  private username= "Charity-Mutembei";
+  // username: string;
   apiKey: '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' | undefined;
 
   constructor(private http: HttpClient) {

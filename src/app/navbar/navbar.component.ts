@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GitserviceService } from '../gitservice.service';
+import { Github } from '../github';
 
 @Component({
   selector: 'app-navbar',
@@ -9,9 +10,9 @@ import { GitserviceService } from '../gitservice.service';
 
 })
 export class NavbarComponent implements OnInit {
-  username: any;
-  user: any;
-  repos: any
+  // username: any;
+  // user: any;
+  // repos: any
 
   constructor( private _githubService: GitserviceService) { }
 

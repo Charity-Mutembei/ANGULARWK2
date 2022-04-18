@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GitserviceService } from '../gitservice.service';
+import { Github } from '../github';
 
 @Component({
   selector: 'app-github',
